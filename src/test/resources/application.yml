@@ -1,0 +1,40 @@
+debug: false
+trace: false
+
+spring:
+  application:
+    name: "demo test"
+  datasource:
+    url: jdbc:mysql://localhost:3306/test_demo_db?useSSL=false
+    username: demo_user
+    password: demo_pass
+    initialization-mode: always
+    continue-on-error: false
+    sql-script-encoding: UTF-8
+    hikari:
+      maximum-pool-size: 1
+      minimum-idle: 1
+      connection-test-query: select 1
+      connection-timeout: 30000
+      pool-name: testConnection
+  jpa:
+    open-in-view: true
+#    hibernate:
+#      ddl-auto: none
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+        generate_statistics: false
+#        dialect: org.hibernate.dialect.MySQL57Dialect
+
+logging:
+  file: demo-junit4-spring2-test.log
+  level:
+    root: INFO
+    org.springframework: INFO
+    org.hibernate: INFO
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    com.example.demo: DEBUG

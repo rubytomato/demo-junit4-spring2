@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entity-mappings version="2.1"
+                 xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd">
+
+    <named-stored-procedure-query name="Memo.demo2" procedure-name="procdemo2">
+        <description>demo stored procedure</description>
+        <parameter name="id" class="java.lang.Long" mode="IN"/>
+        <parameter name="description" class="java.lang.String" mode="IN"/>
+    </named-stored-procedure-query>
+
+</entity-mappings>
