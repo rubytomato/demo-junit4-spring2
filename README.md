@@ -17,11 +17,13 @@ mvn clean package
 ### executable jar
 
 ```text
-java -jar target\demo.jar
+java -jar .\target\demo.jar
 ```
 
+Specify a profile
+
 ```text
-java -jar -Dspring.profiles.active=dev target\demo.jar
+java -jar -Dspring.profiles.active=dev .\target\demo.jar
 ```
 
 ### spring boot maven plugin
