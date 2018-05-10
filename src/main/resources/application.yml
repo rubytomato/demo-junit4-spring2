@@ -51,15 +51,15 @@ server:
     context-path: /app
   port: 9000
 
-logging.file: demo-junit4-spring2.log
+logging.file: demo.log
 logging:
   file:
-    max-history: 6
     max-size: 50MB
+    max-history: 10
   level:
-    root: INFO
-    org.springframework: INFO
-    org.hibernate: INFO
-    org.hibernate.SQL: DEBUG
-    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
-    com.example.demo: INFO
+    root: info
+    org.springframework: info
+    org.hibernate: info
+    org.hibernate.SQL: debug
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+    com.example.demo: debug

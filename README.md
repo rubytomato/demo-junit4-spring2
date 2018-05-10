@@ -1,9 +1,9 @@
-# Spring Boot 2.0.1 Rest API application
+# Spring Boot 2.0 Rest API application
 
 環境
 
 * Java 1.8.0
-* Spring Boot 2.0.1
+* Spring Boot 2.0.2
 * Maven 3.5.2
 
 ## compile
@@ -17,11 +17,11 @@ mvn clean package
 ### executable jar
 
 ```text
-java -jar target\demo-junit4-spring2.0.0.2-SNAPSHOT.jar
+java -jar target\demo.jar
 ```
 
 ```text
-java -jar -Dspring.profiles.active=dev target\demo-junit4-spring2-0.0.2-SNAPSHOT.jar
+java -jar -Dspring.profiles.active=dev target\demo.jar
 ```
 
 ### spring boot maven plugin
