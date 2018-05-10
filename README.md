@@ -1,6 +1,6 @@
 # Spring Boot 2.0 Rest API application
 
-環境
+Development environment
 
 * Java 1.8.0
 * Spring Boot 2.0.2
@@ -31,6 +31,8 @@ java -jar -Dspring.profiles.active=dev .\target\demo.jar
 ```text
 mvn spring-boot:run
 ```
+
+Specify a profile
 
 ```text
 mvn spring-boot:run -Dspring-boot.run.profiles=dev
