@@ -33,7 +33,7 @@ public class MemoControllerIntegrationTests {
 
     @Ignore
     @Test
-    public void getOne() {
+    public void getMemo() {
         Memo expected = new Memo(1L, "memo shopping", "memo1 description", false, LocalDateTime.of(2018, 1, 4, 12, 1, 0));
 
         ResponseEntity<Memo> result = testRestTemplate.getForEntity("/memo/{id}", Memo.class, expected.getId());

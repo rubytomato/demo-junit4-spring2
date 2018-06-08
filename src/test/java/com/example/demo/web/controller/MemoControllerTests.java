@@ -43,7 +43,7 @@ public class MemoControllerTests {
             MediaType.APPLICATION_JSON.getSubtype(), Charset.forName("utf8"));
 
     @Test
-    public void getOne() throws Exception {
+    public void getMemo() throws Exception {
         Memo expected = new Memo(1L, "test title", "test description", false, LocalDateTime.of(2018, 3, 19, 0, 34, 49));
         String expectedJson = objectMapper.writeValueAsString(expected);
         Mockito.when(memoService.findById(anyLong())).thenReturn(Optional.ofNullable(expected));

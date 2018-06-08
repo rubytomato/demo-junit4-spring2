@@ -29,12 +29,15 @@ spring:
         generate_statistics: false
 #        dialect: org.hibernate.dialect.MySQL57Dialect
 
+logging.file: demo-test.log
 logging:
-  file: demo-junit4-spring2-test.log
+  file:
+    max-size: 50MB
+    max-history: 10
   level:
-    root: INFO
-    org.springframework: INFO
-    org.hibernate: INFO
-    org.hibernate.SQL: DEBUG
-    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
-    com.example.demo: DEBUG
+    root: info
+    org.springframework: info
+    org.hibernate: info
+    org.hibernate.SQL: debug
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+    com.example.demo: debug
